@@ -32,21 +32,7 @@
             header("Location: playlists.php");
             exit();
         }
-/*
-        $pyt1 = mysqli_query($link, "SELECT * FROM playlistname WHERE name='$plname'");
-        $rekord = mysqli_fetch_array($pyt1);
-        if(!$rekord){
-            $pyt2 = mysqli_query($link, "INSERT INTO playlistname (idu, name, public) VALUES ($userid,'$plname','$pltype')");
-            $_SESSION['error']="Dodano playliste";
-            mysqli_close($link);
-            header("Location: playlists.php");
-            exit();
-        }else{
-            mysqli_close($link);
-            $_SESSION['error']="Istnieje playlista o takiej nazwie.";
-            header("Location: playlists.php");
-            exit();
-        }*/
+
            ?>
 </BODY>
 </HTML>

@@ -10,7 +10,7 @@
     echo "<div style=\"position:absolute;left:10px;top:10px;font-size:18px;font-weight:bold;\"><a href=\"index2.php\">Powrót</a></div>";
     echo "<br><p style=\"color:red;font-size:15px;\">" . $_SESSION['error'] . "</p>";
         $_SESSION['error'] = "";
-        $dbhost="**"; $dbuser="**"; $dbpassword="**"; $dbname="**";        $link = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
+        $dbhost="**"; $dbuser="**"; $dbpassword="**"; $dbname="**";       $link = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
         if(!$link) { echo "Błąd: ". mysqli_connect_errno()." ".mysqli_connect_error(); } // obsługa błędu połączenia z BD
         mysqli_query($link, "SET NAMES 'utf8'"); // ustawienie polskich znaków
         $userid = $_SESSION['userid'];
